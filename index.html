@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <script src="list.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11" defer></script>
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" >Holiday Cheat List</header>
+    <div id="app">
+        <form action="">
+            <h1 style="text-align: center;">Create your account</h1>
+            <!-- <label for="title">List Title</label>
+            <input type="text" id="title" name="listTitle" placeholder="Your list title here.."> -->
+            <label for="name">List Creator</label>
+            <input type="text" id="fname" name="firstName" placeholder="Your first name..">
+            <input type="text" id="lname" name="lastName" placeholder="Your last name..">
+            <input type="email" id="creatorEmail" name="emailAddress" placeholder="Email address here..">
+            <input type="password" id="creatorPassword" name="password" placeholder=" Create password..">
+            <input type="password" id="passwordRepeat" name="passwordRep" placeholder=" Repeat password..">
+            <!-- <label for="invite">Invite your peeps!</label> -->
+            <!--<input type="number" id="invitees" name="inviteeTotal" placeholder="How many peeps are you inviting?">-->
+            <!--<button class="button">Enter</button>--> 
+            <!-- <input type="text" id="name" name="peeps" placeholder="Full name here.."> -->               
+           <!-- <input type="email" id="email" name="emailAddress" placeholder="Peeps address here..">-->
+            <input type="submit" value="Submit">
+            <H3 class="onLogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">or login</H3>
+        </form> 
+    </div>
+    <!--Login Modal-->
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    
+</body>
+</html>

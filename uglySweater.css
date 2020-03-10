@@ -1,0 +1,156 @@
+/* div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } */
+    #containerBody {
+    
+    background-image: url("https://cdn.pixabay.com/photo/2019/10/02/03/53/sweater-pattern-4519912_1280.jpg");
+}
+
+  .btn-success {
+      width: 10%;
+  }
+
+  #header {
+      background-color: transparent;
+  }
+
+  #jumbo {
+      background-color: transparent;
+      color: rgb(255, 184, 6);
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bolder; 
+        
+  }
+  h1{
+    -webkit-text-stroke-width: 2.5px; 
+    -webkit-text-stroke-color: black;
+    /* text-shadow: 0 0 5px rgb(255, 254, 254), 0 0 7px rgb(248, 247, 247);  */
+  }
+
+  #nameBox {
+      background-color: white;
+  }
+
+  #nameBoxTwo {
+    background-color: white;
+  }
+
+  #nameBoxThree {
+    background-color: white;
+  }
+ 
+  #nameBoxFour {
+    background-color: white;
+  }
+
+  #nameBoxFive {
+    background-color: white;
+  } 
+
+  #nameBoxSix {
+    background-color: white;
+  }
+
+  #nameBoxSeven {
+    background-color: white;
+  }
+
+  #nameBoxEight {
+    background-color: white;
+  }
+
+  #nameBoxNine {
+    background-color: white;
+  }
+
+  #headingOne {
+      
+      background-image: url("https://cdn.pixabay.com/photo/2019/11/08/10/27/shabbat-4610987_1280.png");
+  }
+
+  #collapseOne {
+      background-color: red;
+  }
+
+  #collapseTwo {
+    background-color: red;
+  }
+
+  #collapseThree {
+    background-color: red;
+  }
+
+  #collapseFour {
+    background-color: red;
+  }
+
+  #collapseFive {
+    background-color: red;
+  }
+
+  #collapseSix {
+    background-color: red;
+  }
+
+  #collapseSeven {
+    background-color: red;
+  }
+
+  #collapseEight {
+    background-color: red;
+  }
+
+  #collapseNine {
+    background-color: red;
+  }
+
+
+  .btn-link {
+      color: black !important;
+      font-weight: bolder !important;
+      -webkit-text-stroke-width: .5px; 
+    -webkit-text-stroke-color: black;
+    font-size: 2rem !important;
+  }
+
+  #headingTwo {
+      background-image: url("https://cdn.pixabay.com/photo/2015/12/09/00/20/pattern-1084046_1280.jpg");
+  }
+
+  #headingThree {
+      background-image: url("https://cdn.pixabay.com/photo/2017/11/08/19/01/christmas-2931358_1280.jpg");
+  }
+
+  #headingFour {
+      background-image: url("https://cdn.pixabay.com/photo/2017/11/14/16/05/christmas-2948851_1280.png");
+  }
+
+  #headingFive {
+      background-image: url("https://cdn.pixabay.com/photo/2016/12/01/21/14/snowflake-1876217_1280.png");
+  }
+
+  #headingSix {
+      background-image: url("https://cdn.pixabay.com/photo/2016/12/07/13/35/seamless-1889476_1280.jpg");
+  }
+
+  #headingSeven {
+      background-image: url("https://cdn.pixabay.com/photo/2018/08/29/11/05/snowflake-background-3639667_1280.jpg");
+  }
+
+  #headingEight {
+      background-image: url("https://cdn.pixabay.com/photo/2017/12/13/16/40/background-3017167_1280.jpg");
+  }
+
+  #headingNine {
+      background-image: url("https://cdn.pixabay.com/photo/2016/10/31/22/32/background-1787033_1280.jpg");
+  }
+
+  @media only screen and (max-width: 600px) {
+   
+    .display-2 {
+        font-size: small;
+    }
+  }

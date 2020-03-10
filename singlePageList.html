@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="uglySweater.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Ugly Holiday List</title>
+</head>
+<body>
+    <div class="container-fluid px-0 pb-4" id="containerBody">
+        <div class="container-fluid px-0 " id="header">
+            <div class="jumbotron jumbotron-fluid " id="jumbo"  >
+                <div class="container-fluid mt-4">
+                  <h1 class="display-2">Ugly Holiday List</h1>
+                </div>
+              </div>
+        </div>
+        
+        <div id="app" class="container justify-content-center  ">       
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 " style="text-align: center;">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="container" id="nameBox">{{ username }}</div>
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+                    <form>
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" v-model="giftOne" class="form-control ml-2 mt-2 mb-2" id="gift-1"  placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                          </div>
+                          <div class="col mr-4">                                        
+                            <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                          </div>
+                        </div>
+                      </form>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <div class="container" id="nameBoxTwo">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <div class="container" id="nameBoxThree">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <div class="container" id="nameBoxFour">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <div class="container" id="nameBoxFive">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            <div class="container" id="nameBoxSix">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            <div class="container" id="nameBoxSeven">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseSeven" class="collapse hide" aria-labelledby="headingSeven" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEight">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            <div class="container" id="nameBoxEight">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseEight" class="collapse hide" aria-labelledby="headingEight" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-header" id="headingNine">
+                      <h5 class="mb-0" style="text-align: center;">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                            <div class="container" id="nameBoxNine">{{ username }}</div>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseNine" class="collapse hide" aria-labelledby="headingNine" data-parent="#accordion">
+                      <form>
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Gift Title">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control ml-2 mt-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                              <input type="text" class="form-control ml-2 mb-2" placeholder="Link">
+                            </div>
+                            <div class="col mr-4">                                        
+                              <button type="button" class="form-control btn btn-success mt-2 ml-2 mb-2 mr-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                              <button type="button" class="form-control btn btn-success ml-2 mb-2">Claim</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
